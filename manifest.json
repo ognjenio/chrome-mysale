@@ -1,0 +1,14 @@
+{
+  "name": "mysale",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "URL rewriter for MySale.my.",
+  "content_scripts": [
+    {
+      "matches": ["http://*.mysale.my/"],
+      "js": ["jquery.min.js", "main.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "permissions": ["tabs"]
+}
